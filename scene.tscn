@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bvns2u367akpl"]
 
-[ext_resource type="Script" uid="uid://qem2veh3tun5" path="res://spawn_manager.gd" id="1_nxogm"]
+[ext_resource type="Script" uid="uid://qem2veh3tun5" path="res://Scripts/spawn_manager.gd" id="1_nxogm"]
 
 [node name="Scene" type="Node3D"]
 

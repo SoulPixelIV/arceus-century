@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bq25f7ugg1xat"]
 
-[ext_resource type="Script" uid="uid://d0v1paimb3fkj" path="res://camera_3d.gd" id="1_4otpt"]
+[ext_resource type="Script" uid="uid://d0v1paimb3fkj" path="res://Scripts/camera_3d.gd" id="1_4otpt"]
 
 [sub_resource type="Environment" id="Environment_1ay5t"]
 volumetric_fog_enabled = true

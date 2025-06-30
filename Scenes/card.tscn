@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://clm6rvkn8i8xy"]
+
+[ext_resource type="Texture2D" uid="uid://dfb0l5icu53f0" path="res://Textures/cardTest.png" id="1_0qqmn"]
+
+[node name="Card" type="TextureRect"]
+offset_left = 121.0
+offset_top = 149.0
+offset_right = 185.0
+offset_bottom = 239.0
+texture = ExtResource("1_0qqmn")

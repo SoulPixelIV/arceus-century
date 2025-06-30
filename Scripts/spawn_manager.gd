@@ -5,7 +5,9 @@ var spawn_timer_save = spawn_timer
 var firstSpawn = false
 var tunnel := preload("res://Scenes/tunnel.tscn")
 var camera := preload("res://Scenes/camera_3d.tscn")
+var card := preload("res://Scenes/card_ui.tscn")
 var spawned_camera: Camera3D
+var spawned_card: Sprite3D
 
 func spawn_tunnel_segment(position: Vector3) -> void:
 	var tunnel_instance = tunnel.instantiate()
@@ -14,6 +16,8 @@ func spawn_tunnel_segment(position: Vector3) -> void:
 	
 func _ready() -> void:
 	spawn_timer = 0
+	
+	#Spawn Camera
 	spawned_camera = camera.instantiate()
 	spawned_camera.position = Vector3(0, 0, 0)
 	add_child(spawned_camera)
