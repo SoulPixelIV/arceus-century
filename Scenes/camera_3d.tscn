@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bq25f7ugg1xat"]
+
+[ext_resource type="Script" uid="uid://d0v1paimb3fkj" path="res://camera_3d.gd" id="1_4otpt"]
+
+[sub_resource type="Environment" id="Environment_1ay5t"]
+volumetric_fog_enabled = true
+volumetric_fog_albedo = Color(0.113257, 0.256857, 1, 1)
+volumetric_fog_detail_spread = 6.0
+
+[node name="Camera3D" type="Camera3D"]
+environment = SubResource("Environment_1ay5t")
+script = ExtResource("1_4otpt")
+mov_speed = 1.0
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+light_color = Color(1, 1, 0.541176, 1)
+light_energy = 2.0
+spot_range = 10.0
