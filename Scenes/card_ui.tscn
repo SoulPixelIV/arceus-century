@@ -8,12 +8,19 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
+[node name="CardContainer" type="Control" parent="."]
+anchors_preset = 0
+offset_right = 324.0
+offset_bottom = 193.0
+
 [node name="DrawCardButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 6.0
-offset_top = 207.0
-offset_right = 58.0
-offset_bottom = 233.0
+offset_left = 5.0
+offset_top = 182.0
+offset_right = 59.0
+offset_bottom = 236.0
+text = "Draw Card"
+autowrap_mode = 2
 script = ExtResource("1_lgc0u")
 
 [connection signal="pressed" from="DrawCardButton" to="DrawCardButton" method="_on_pressed"]
