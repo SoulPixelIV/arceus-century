@@ -1,12 +1,32 @@
-[gd_scene load_steps=2 format=3 uid="uid://l1m76cq5pm87"]
+[gd_scene load_steps=3 format=3 uid="uid://l1m76cq5pm87"]
 
-[ext_resource type="Script" uid="uid://mlt6tgd6upmg" path="res://Scripts/draw_card_button.gd" id="1_lgc0u"]
+[ext_resource type="Script" uid="uid://bd268hyv1mxjr" path="res://Scripts/card_ui.gd" id="1_lgc0u"]
+
+[sub_resource type="GDScript" id="GDScript_y8epe"]
+script/source = "extends Button
+
+var numberOfCards = 0
+var maxNumberOfCards = 5
+var card = preload(\"res://Scenes/card.tscn\")
+@onready var card_container = get_parent().get_node(\"CardContainer\")
+
+func initiateCard() -> void:
+	if numberOfCards < maxNumberOfCards:
+		numberOfCards += 1
+		var spawnedCard = card.instantiate()
+		spawnedCard.position = Vector2(30 + 40 * numberOfCards, 150)
+		card_container.add_child(spawnedCard)
+	
+func _on_pressed() -> void:
+	initiateCard()
+"
 
 [node name="Card UI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_lgc0u")
 
 [node name="CardContainer" type="Control" parent="."]
 anchors_preset = 0
@@ -15,12 +35,25 @@ offset_bottom = 193.0
 
 [node name="DrawCardButton" type="Button" parent="."]
 layout_mode = 0
-offset_left = 5.0
-offset_top = 182.0
-offset_right = 59.0
-offset_bottom = 236.0
+offset_left = 11.0
+offset_top = 172.0
+offset_right = 65.0
+offset_bottom = 226.0
 text = "Draw Card"
 autowrap_mode = 2
-script = ExtResource("1_lgc0u")
+script = SubResource("GDScript_y8epe")
 
-[connection signal="pressed" from="DrawCardButton" to="DrawCardButton" method="_on_pressed"]
+[node name="TimerBar" type="ProgressBar" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.375
+anchor_top = 1.0
+anchor_right = 0.375
+anchor_bottom = 5.537
+offset_left = -12.0
+offset_top = 189.0
+offset_right = 129.0
+offset_bottom = 34.52
+scale = Vector2(0.5, 0.3)
+
+[connection signal="pressed" from="DrawCardButton" to="." method="_on_draw_card_button_pressed"]
