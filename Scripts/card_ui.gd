@@ -7,6 +7,9 @@ extends Control
 var card = preload("res://Scenes/card.tscn") 
 @onready var card_container = $CardContainer
 @onready var timer_bar = $TimerBar
+
+func _ready() -> void:
+	timer_bar.value = 0
 	
 func _process(delta: float) -> void:
 	if timer_bar.value < 100:

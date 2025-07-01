@@ -56,4 +56,19 @@ offset_right = 129.0
 offset_bottom = 34.52
 scale = Vector2(0.5, 0.3)
 
+[node name="DiscardPileButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 7.469
+anchor_top = 5.537
+anchor_right = 7.469
+anchor_bottom = 5.537
+offset_left = -16.76
+offset_top = -13.48
+offset_right = 50.24
+offset_bottom = 40.52
+scale = Vector2(0.5, 0.5)
+text = "Discard
+Pile"
+
 [connection signal="pressed" from="DrawCardButton" to="." method="_on_draw_card_button_pressed"]

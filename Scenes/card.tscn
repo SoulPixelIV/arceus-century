@@ -1,10 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://clm6rvkn8i8xy"]
+[gd_scene load_steps=3 format=3 uid="uid://clm6rvkn8i8xy"]
 
 [ext_resource type="Texture2D" uid="uid://dfb0l5icu53f0" path="res://Textures/cardTest.png" id="1_0qqmn"]
+[ext_resource type="Script" uid="uid://chpljbacrmsgy" path="res://Scripts/card.gd" id="2_wf8id"]
 
-[node name="Card" type="TextureRect"]
+[node name="Card" type="TextureButton"]
 offset_left = 121.0
 offset_top = 149.0
 offset_right = 185.0
 offset_bottom = 239.0
-texture = ExtResource("1_0qqmn")
+texture_normal = ExtResource("1_0qqmn")
+script = ExtResource("2_wf8id")
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]
