@@ -3,6 +3,7 @@ extends Camera3D
 @export var mov_speed: float = 5.0
 
 var card_ui = preload("res://Scenes/card_ui.tscn")
+
 var current_hovered: Node = null  # Merkt sich das aktuell gehoverte Objekt
 
 func _ready() -> void:

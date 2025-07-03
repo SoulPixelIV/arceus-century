@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://3w02dxs87mvk"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5paiy"]
+load_path = "res://.godot/imported/arrow.png-598b90186a62e5cc0acbe9b431d3a4c0.ctex"
+
+[node name="Arrow" type="Sprite2D"]
+texture = SubResource("CompressedTexture2D_5paiy")

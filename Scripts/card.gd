@@ -13,5 +13,6 @@ func _on_mouse_exited() -> void:
 	scale = Vector2(1, 1)
 
 func _on_button_down() -> void:
-	card_ui_parent.cardSlots[handPos] = 0
-	queue_free()
+	if !card_ui_parent.card_selected:
+		card_ui_parent.card_selected = true
+		card_ui_parent.arrow_start_pos = position

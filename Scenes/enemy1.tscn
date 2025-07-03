@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://dul8cxxteklf2"]
 
 [ext_resource type="Texture2D" uid="uid://xs6xw0q80vur" path="res://Textures/enemy1.png" id="1_mxdow"]
-[ext_resource type="Script" uid="uid://bg45twuilhbu7" path="res://Scenes/enemy_1.gd" id="2_mxdow"]
+[ext_resource type="Script" uid="uid://bg45twuilhbu7" path="res://enemy_1.gd" id="2_mxdow"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_mxdow"]
 size = Vector3(0.318359, 0.615173, 0.281006)
