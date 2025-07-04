@@ -71,4 +71,13 @@ scale = Vector2(0.5, 0.5)
 text = "Discard
 Pile"
 
+[node name="ObjectLabel" type="Label" parent="."]
+layout_mode = 0
+offset_left = 178.0
+offset_top = 7.0
+offset_right = 298.0
+offset_bottom = 30.0
+text = "Selected Object"
+horizontal_alignment = 1
+
 [connection signal="pressed" from="DrawCardButton" to="." method="_on_draw_card_button_pressed"]

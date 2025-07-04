@@ -5,16 +5,21 @@ extends Camera3D
 var card_ui = preload("res://Scenes/card_ui.tscn")
 
 var current_hovered: Node = null  # Merkt sich das aktuell gehoverte Objekt
+var objectLabel = null
 
 func _ready() -> void:
 	var ui = card_ui.instantiate()
 	add_child(ui)
+	objectLabel = ui.get_node("ObjectLabel")
 
 func _process(delta: float) -> void:
 	# Movement
 	var direction := Vector3.ZERO
 	direction.z -= 1
 	translate(direction * mov_speed * delta)
+	
+	if current_hovered != null:
+		objectLabel.text = current_hovered.display_name
 	
 	# Cursor Raycast
 	var mouse_pos = get_viewport().get_mouse_position()
