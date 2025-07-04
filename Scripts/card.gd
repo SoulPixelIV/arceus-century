@@ -14,14 +14,14 @@ func _on_mouse_entered() -> void:
 	if !card_is_selected:
 		curr_hovered = true
 		z_index = 100
-		scale = Vector2(1.2, 1.2)
+		scale = Vector2(0.85, 0.85) #1.2
 		position += Vector2(0, -20)
 
 func _on_mouse_exited() -> void:
 	if !card_is_selected:
 		curr_hovered = false
 		z_index = 0
-		scale = Vector2(1, 1)
+		scale = Vector2(0.75, 0.75) #1.0
 		position -= Vector2(0, -20)
 
 func _on_button_down() -> void:
@@ -38,5 +38,5 @@ func _on_button_down() -> void:
 func card_has_focus() -> void:
 	card_is_selected = true
 	z_index = 100
-	scale = Vector2(1.2, 1.2)
+	scale = Vector2(0.85, 0.85) #1.2
 	position = Vector2(370, 170)

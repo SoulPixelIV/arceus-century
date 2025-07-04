@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c858nwd2utm2p"
-path.s3tc="res://.godot/imported/enemy1.png-b73cd908e49d66d3920e23af21996eab.s3tc.ctex"
+uid="uid://xs6xw0q80vur"
+path.s3tc="res://.godot/imported/enemy1LEGACY.png-1d2ddd41af2e813cc4e74e72e882c5a5.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Textures/enemy1.png"
-dest_files=["res://.godot/imported/enemy1.png-b73cd908e49d66d3920e23af21996eab.s3tc.ctex"]
+source_file="res://Textures/Legacy/enemy1LEGACY.png"
+dest_files=["res://.godot/imported/enemy1LEGACY.png-1d2ddd41af2e813cc4e74e72e882c5a5.s3tc.ctex"]
 
 [params]
 
