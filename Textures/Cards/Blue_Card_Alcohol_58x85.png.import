@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cj3p62u1y0r0f"
-path="res://.godot/imported/red_card_spear.png-0f0b78a0a1c024b5d7a4f2d704ec06c5.ctex"
+uid="uid://c0yn8gpy5e4dx"
+path="res://.godot/imported/Blue_Card_Alcohol_58x85.png-d57b50e63aafcae5929af97b2ff907f3.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/red_card_spear.png"
-dest_files=["res://.godot/imported/red_card_spear.png-0f0b78a0a1c024b5d7a4f2d704ec06c5.ctex"]
+source_file="res://Textures/Cards/Blue_Card_Alcohol_58x85.png"
+dest_files=["res://.godot/imported/Blue_Card_Alcohol_58x85.png-d57b50e63aafcae5929af97b2ff907f3.ctex"]
 
 [params]
 

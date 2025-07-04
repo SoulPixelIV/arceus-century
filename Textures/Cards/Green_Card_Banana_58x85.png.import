@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0whue7irybff"
-path="res://.godot/imported/blue_card_key.png-638c71a42ba98ee05cd90619b34f74ea.ctex"
+uid="uid://brxlgi0nkocvk"
+path="res://.godot/imported/Green_Card_Banana_58x85.png-9b51d1daa3f53350128fb8d232c74ba5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/blue_card_key.png"
-dest_files=["res://.godot/imported/blue_card_key.png-638c71a42ba98ee05cd90619b34f74ea.ctex"]
+source_file="res://Textures/Cards/Green_Card_Banana_58x85.png"
+dest_files=["res://.godot/imported/Green_Card_Banana_58x85.png-9b51d1daa3f53350128fb8d232c74ba5.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uu06bfg0cehk"
-path="res://.godot/imported/attack_card_combat_knife.png-f3dd91580f502b162ebf6145939b92e4.ctex"
+uid="uid://ciptinah653e8"
+path="res://.godot/imported/Red_Card_Combat_Knife_58x85.png-fd2a925210f2a090c105c121bac0bcb1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/attack_card_combat_knife.png"
-dest_files=["res://.godot/imported/attack_card_combat_knife.png-f3dd91580f502b162ebf6145939b92e4.ctex"]
+source_file="res://Textures/Cards/Red_Card_Combat_Knife_58x85.png"
+dest_files=["res://.godot/imported/Red_Card_Combat_Knife_58x85.png-fd2a925210f2a090c105c121bac0bcb1.ctex"]
 
 [params]
 

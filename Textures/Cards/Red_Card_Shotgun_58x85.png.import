@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dcndao3rn8x8u"
-path="res://.godot/imported/blue_card_water.png-0abe9d4cbcbad72125dfd3f4bacf7034.ctex"
+uid="uid://bux2o7tfp5beh"
+path="res://.godot/imported/Red_Card_Shotgun_58x85.png-432cff699dc53cb93777ae189ef9655f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/blue_card_water.png"
-dest_files=["res://.godot/imported/blue_card_water.png-0abe9d4cbcbad72125dfd3f4bacf7034.ctex"]
+source_file="res://Textures/Cards/Red_Card_Shotgun_58x85.png"
+dest_files=["res://.godot/imported/Red_Card_Shotgun_58x85.png-432cff699dc53cb93777ae189ef9655f.ctex"]
 
 [params]
 

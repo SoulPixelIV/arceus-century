@@ -33,10 +33,10 @@ func initiateCard() -> void:
 		var spawnedCard = card.instantiate()
 		spawnedCard.card_ui_parent = self
 		spawnedCard.handPos = currCardNum
-		spawnedCard.position = Vector2(100 + 60 * currCardNum, 260) #280
-		spawnedCard.original_posX = 90 + 60 * currCardNum #100 +
-		spawnedCard.original_posY = 260 #280
-		spawnedCard.scale = Vector2(0.75, 0.75)
+		spawnedCard.position = Vector2(100 + 60 * currCardNum, 280)
+		spawnedCard.original_posX = 100 + 60 * currCardNum
+		spawnedCard.original_posY = 280
+		#spawnedCard.scale = Vector2(0.75, 0.75)
 		if cardTextures.size() > 0:
 			var random_tex = cardTextures[randi() % cardTextures.size()]
 			spawnedCard.texture_normal = random_tex

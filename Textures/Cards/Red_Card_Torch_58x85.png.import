@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cqv2auac6v2r5"
-path="res://.godot/imported/Red_Card_Shotgun.png-13a73e5ca5512729def60d368dd61076.ctex"
+uid="uid://cj5wru2uc75i3"
+path="res://.godot/imported/Red_Card_Torch_58x85.png-6fae2c14ce1089a95f9ebc5613ef64de.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Red_Card_Shotgun.png"
-dest_files=["res://.godot/imported/Red_Card_Shotgun.png-13a73e5ca5512729def60d368dd61076.ctex"]
+source_file="res://Textures/Cards/Red_Card_Torch_58x85.png"
+dest_files=["res://.godot/imported/Red_Card_Torch_58x85.png-6fae2c14ce1089a95f9ebc5613ef64de.ctex"]
 
 [params]
 

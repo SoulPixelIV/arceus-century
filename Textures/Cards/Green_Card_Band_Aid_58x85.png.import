@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3t4jkc3j67iu"
-path="res://.godot/imported/Green_Card_Medkit.png-5f98e4bba6971714e6df9ea813f3bfbe.ctex"
+uid="uid://bmy3r68pync2m"
+path="res://.godot/imported/Green_Card_Band_Aid_58x85.png-c361141a061b43e831dc911355696002.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Green_Card_Medkit.png"
-dest_files=["res://.godot/imported/Green_Card_Medkit.png-5f98e4bba6971714e6df9ea813f3bfbe.ctex"]
+source_file="res://Textures/Cards/Green_Card_Band_Aid_58x85.png"
+dest_files=["res://.godot/imported/Green_Card_Band_Aid_58x85.png-c361141a061b43e831dc911355696002.ctex"]
 
 [params]
 

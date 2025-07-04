@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://qkpsbalo0j07"
-path="res://.godot/imported/red_card_molotov.png-73af96f471017c44ada0c64ff4b86669.ctex"
+uid="uid://bilb82453japd"
+path="res://.godot/imported/Green_Card_Milk_Bottle_58x85.png-906a0316512e5926921a0e7244cec0e6.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/red_card_molotov.png"
-dest_files=["res://.godot/imported/red_card_molotov.png-73af96f471017c44ada0c64ff4b86669.ctex"]
+source_file="res://Textures/Cards/Green_Card_Milk_Bottle_58x85.png"
+dest_files=["res://.godot/imported/Green_Card_Milk_Bottle_58x85.png-906a0316512e5926921a0e7244cec0e6.ctex"]
 
 [params]
 

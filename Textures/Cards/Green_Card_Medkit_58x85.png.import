@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c0a2trkcowmvk"
-path="res://.godot/imported/attack_card_harpoon_gun.png-267c4e2f353fbfbdabc840c860a768ab.ctex"
+uid="uid://du5w4qjmko8mh"
+path="res://.godot/imported/Green_Card_Medkit_58x85.png-67a552d512f1e2c157d1561f477bc991.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/attack_card_harpoon_gun.png"
-dest_files=["res://.godot/imported/attack_card_harpoon_gun.png-267c4e2f353fbfbdabc840c860a768ab.ctex"]
+source_file="res://Textures/Cards/Green_Card_Medkit_58x85.png"
+dest_files=["res://.godot/imported/Green_Card_Medkit_58x85.png-67a552d512f1e2c157d1561f477bc991.ctex"]
 
 [params]
 

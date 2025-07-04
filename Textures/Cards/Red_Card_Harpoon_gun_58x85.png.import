@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b0nw4lewmqoi1"
-path="res://.godot/imported/Green_Card_Bandage.png-ff78b6da01402ca46a2ca00612fbb1e7.ctex"
+uid="uid://dss3la3cmrwc2"
+path="res://.godot/imported/Red_Card_Harpoon_gun_58x85.png-cd3a0b89325c45b11ca43eefb16e7aaf.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Green_Card_Bandage.png"
-dest_files=["res://.godot/imported/Green_Card_Bandage.png-ff78b6da01402ca46a2ca00612fbb1e7.ctex"]
+source_file="res://Textures/Cards/Red_Card_Harpoon_gun_58x85.png"
+dest_files=["res://.godot/imported/Red_Card_Harpoon_gun_58x85.png-cd3a0b89325c45b11ca43eefb16e7aaf.ctex"]
 
 [params]
 

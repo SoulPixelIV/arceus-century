@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjv43lewltwba"
-path="res://.godot/imported/blue_card_alcohol.png-2fdb0e8c2674f25b237bcfaca6aa771f.ctex"
+uid="uid://51lapptypls4"
+path="res://.godot/imported/Blue_Card_Banana_Peel_58x85.png-b9958a64377dd452eb86ee69a375a428.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/blue_card_alcohol.png"
-dest_files=["res://.godot/imported/blue_card_alcohol.png-2fdb0e8c2674f25b237bcfaca6aa771f.ctex"]
+source_file="res://Textures/Cards/Blue_Card_Banana_Peel_58x85.png"
+dest_files=["res://.godot/imported/Blue_Card_Banana_Peel_58x85.png-b9958a64377dd452eb86ee69a375a428.ctex"]
 
 [params]
 
