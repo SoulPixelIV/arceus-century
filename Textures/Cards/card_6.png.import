@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://2e7gf775stsx"
-path="res://.godot/imported/Red_Card_Spear_58x85.png-d7953e411d75faa363f919fe674d780e.ctex"
+uid="uid://bmy3r68pync2m"
+path="res://.godot/imported/card_6.png-991b81f24ec504d256d0406b0d26fd21.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Red_Card_Spear_58x85.png"
-dest_files=["res://.godot/imported/Red_Card_Spear_58x85.png-d7953e411d75faa363f919fe674d780e.ctex"]
+source_file="res://Textures/Cards/card_6.png"
+dest_files=["res://.godot/imported/card_6.png-991b81f24ec504d256d0406b0d26fd21.ctex"]
 
 [params]
 

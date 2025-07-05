@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://brxlgi0nkocvk"
-path="res://.godot/imported/Green_Card_Banana_58x85.png-9b51d1daa3f53350128fb8d232c74ba5.ctex"
+uid="uid://cj5wru2uc75i3"
+path="res://.godot/imported/card_14.png-130202949bd744281709741f05a0dd71.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Green_Card_Banana_58x85.png"
-dest_files=["res://.godot/imported/Green_Card_Banana_58x85.png-9b51d1daa3f53350128fb8d232c74ba5.ctex"]
+source_file="res://Textures/Cards/card_14.png"
+dest_files=["res://.godot/imported/card_14.png-130202949bd744281709741f05a0dd71.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpmd0vrw2snyx"
-path="res://.godot/imported/Green_Card_Bandage_58x85.png-171ea6782e79f0f94399957dedde06d5.ctex"
+uid="uid://bilb82453japd"
+path="res://.godot/imported/card_8.png-1fd2ff44c6fdae6f6d805413aa51c459.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Green_Card_Bandage_58x85.png"
-dest_files=["res://.godot/imported/Green_Card_Bandage_58x85.png-171ea6782e79f0f94399957dedde06d5.ctex"]
+source_file="res://Textures/Cards/card_8.png"
+dest_files=["res://.godot/imported/card_8.png-1fd2ff44c6fdae6f6d805413aa51c459.ctex"]
 
 [params]
 

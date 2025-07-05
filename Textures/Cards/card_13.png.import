@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lxtxritps3kn"
-path="res://.godot/imported/Red_Card_Alcohol_58x85.png-909da137f3327a306a070dde81a00ead.ctex"
+uid="uid://2e7gf775stsx"
+path="res://.godot/imported/card_13.png-7177fd70442a618d66b6ebfc7ca598af.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Red_Card_Alcohol_58x85.png"
-dest_files=["res://.godot/imported/Red_Card_Alcohol_58x85.png-909da137f3327a306a070dde81a00ead.ctex"]
+source_file="res://Textures/Cards/card_13.png"
+dest_files=["res://.godot/imported/card_13.png-7177fd70442a618d66b6ebfc7ca598af.ctex"]
 
 [params]
 

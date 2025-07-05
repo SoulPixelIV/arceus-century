@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bilb82453japd"
-path="res://.godot/imported/Green_Card_Milk_Bottle_58x85.png-906a0316512e5926921a0e7244cec0e6.ctex"
+uid="uid://c0yn8gpy5e4dx"
+path="res://.godot/imported/card_0.png-3f75c97a6278cb363a693be43dd52e81.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Textures/Cards/Green_Card_Milk_Bottle_58x85.png"
-dest_files=["res://.godot/imported/Green_Card_Milk_Bottle_58x85.png-906a0316512e5926921a0e7244cec0e6.ctex"]
+source_file="res://Textures/Cards/card_0.png"
+dest_files=["res://.godot/imported/card_0.png-3f75c97a6278cb363a693be43dd52e81.ctex"]
 
 [params]
 

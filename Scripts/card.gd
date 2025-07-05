@@ -1,5 +1,6 @@
 extends TextureButton
 
+var card_id = 0
 var handPos = 0
 var original_posX = 0
 var original_posY = 0
@@ -8,7 +9,7 @@ var curr_hovered = false
 var card_is_selected = false
 
 func _ready() -> void:
-	pivot_offset = size / 2
+	pivot_offset = size / 2 #Set Pivot Point
 
 func _on_mouse_entered() -> void:
 	if !card_is_selected:
@@ -34,6 +35,15 @@ func _on_button_down() -> void:
 		scale = Vector2(1, 1)
 		position = Vector2(original_posX, original_posY - 20)
 		card_is_selected = false
+	
+#Right Click to discard Card
+func _gui_input(event):
+	if event is InputEventMouseButton:
+		if event.button_index == MOUSE_BUTTON_RIGHT and event.pressed:
+			queue_free()  # Karte löschen
+			card_ui_parent.cardSlots[handPos] = 0
+			card_ui_parent.currCardNum -= 1
+			print("Card was discarded.")
 		
 func card_has_focus() -> void:
 	card_is_selected = true
