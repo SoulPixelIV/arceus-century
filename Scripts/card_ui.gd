@@ -15,6 +15,8 @@ var card_is_selected = false
 
 @onready var card_container = $CardContainer
 @onready var timer_bar = $TimerBar
+@onready var draw_card_button = $DrawCardButton
+@onready var discard_pile_button = $DiscardPileButton
 
 func _ready() -> void:
 	deckLabel = get_node("DeckLabel")
@@ -30,11 +32,30 @@ func _process(delta: float) -> void:
 	#Update Deck Counter
 	deckLabel.text = str(deck_size - deck_index)
 	
-	print(currCardsInHand)
-	
 	#Timer Bar
 	if timer_bar.value < 100:
 		timer_bar.value += delta * cardTimerSpeed
+		
+	#Draw Card Button Glow
+	if deck_size - deck_index != 0:
+		if timer_bar.value == 100:
+			draw_card_button.add_theme_color_override("font_color", Color(1.0, 0.8, 0.2))
+			draw_card_button.add_theme_color_override("font_focus_color", Color(1.0, 0.8, 0.2))
+			draw_card_button.add_theme_color_override("font_pressed_color", Color(1.0, 0.8, 0.2))
+		else:
+			draw_card_button.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
+			draw_card_button.add_theme_color_override("font_focus_color", Color(1.0, 1.0, 1.0))
+			draw_card_button.add_theme_color_override("font_pressed_color", Color(1.0, 1.0, 1.0))
+		
+	#Draw Discard Pile Glow
+	if deck_size - deck_index == 0 and currCardsInHand == 0:
+		discard_pile_button.add_theme_color_override("font_color", Color(1.0, 0.8, 0.2))
+		discard_pile_button.add_theme_color_override("font_focus_color", Color(1.0, 0.8, 0.2))
+		discard_pile_button.add_theme_color_override("font_pressed_color", Color(1.0, 0.8, 0.2))
+	else:
+		discard_pile_button.add_theme_color_override("font_color", Color(1.0, 1.0, 1.0))
+		discard_pile_button.add_theme_color_override("font_focus_color", Color(1.0, 1.0, 1.0))
+		discard_pile_button.add_theme_color_override("font_pressed_color", Color(1.0, 1.0, 1.0))
 
 func initiateCard() -> void:
 	currCardNum = 0
