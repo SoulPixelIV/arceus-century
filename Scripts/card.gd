@@ -8,7 +8,37 @@ var card_ui_parent = null
 var curr_hovered = false
 var card_is_selected = false
 
+var health_regain = 0
+var strength_buff = 0
+
+var element_water = false
+
+var keylock = 0
+
+var enemy_confusion_debuff = false
+
 func _ready() -> void:
+	#Set Card Values
+	match card_id:
+		0:
+			strength_buff = 2
+		1:
+			element_water = true
+		2:
+			keylock = 1
+		3:
+			enemy_confusion_debuff = true
+		4:
+			health_regain = 3
+		5:
+			health_regain = 5
+		6:
+			health_regain = 2
+		7:
+			health_regain = 10
+		8:
+			health_regain = 2
+	
 	pivot_offset = size / 2 #Set Pivot Point
 
 func _on_mouse_entered() -> void:
