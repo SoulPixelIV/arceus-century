@@ -8,6 +8,8 @@ var card_ui_parent = null
 var curr_hovered = false
 var card_is_selected = false
 
+var damage = 0
+
 var health_regain = 0
 var strength_buff = 0
 
@@ -38,6 +40,18 @@ func _ready() -> void:
 			health_regain = 10
 		8:
 			health_regain = 2
+		9:
+			damage = 2
+		10:
+			damage = 2
+		11:
+			damage = 5
+		12:
+			damage = 5
+		13:
+			damage = 3
+		14:
+			damage = 1
 	
 	pivot_offset = size / 2 #Set Pivot Point
 

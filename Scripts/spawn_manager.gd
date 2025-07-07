@@ -4,6 +4,7 @@ extends Node3D
 @export var enemy_spawn_timer = 5
 var spawn_timer_save = spawn_timer
 var enemy_spawn_timer_save = enemy_spawn_timer
+var stop_enemy_spawn = false
 var firstSpawn = false
 var tunnel_spawn_distance = 7.9;
 var tunnel := preload("res://Scenes/tube_test.tscn")
@@ -48,8 +49,11 @@ func _process(delta: float) -> void:
 			spawn_timer = spawn_timer_save
 				
 	#Spawn Enemy
-	if enemy_spawn_timer < 0:
-		if spawned_camera and spawned_camera.is_inside_tree():
-			var forward_dir = -spawned_camera.global_transform.basis.z.normalized()
-			spawn_enemy1(spawned_camera.global_transform.origin + forward_dir * 5)
-			enemy_spawn_timer = enemy_spawn_timer_save
+	if !stop_enemy_spawn:
+		if enemy_spawn_timer < 0:
+			if spawned_camera and spawned_camera.is_inside_tree():
+				var forward_dir = -spawned_camera.global_transform.basis.z.normalized()
+				spawn_enemy1(spawned_camera.global_transform.origin + forward_dir)
+				enemy_spawn_timer = enemy_spawn_timer_save
+				spawned_camera.moving = false
+				stop_enemy_spawn = true

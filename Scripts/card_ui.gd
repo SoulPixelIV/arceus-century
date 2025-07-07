@@ -3,6 +3,7 @@ extends Control
 @export var cardTimerSpeed = 30
 
 var card = preload("res://Scenes/card.tscn")
+var player = preload("res://Scenes/player.tscn")
 var deckLabel = null
 var deck = []
 var deck_size = 10
@@ -19,6 +20,9 @@ var card_is_selected = false
 @onready var discard_pile_button = $DiscardPileButton
 
 func _ready() -> void:
+	var spawned_player = player.instantiate()
+	add_child(spawned_player)
+	
 	deckLabel = get_node("DeckLabel")
 	
 	#Fill Deck with Starter Cards

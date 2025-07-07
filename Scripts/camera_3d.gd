@@ -4,6 +4,7 @@ extends Camera3D
 
 var card_ui = preload("res://Scenes/card_ui.tscn")
 
+var moving = true
 var current_hovered: Node = null  # Merkt sich das aktuell gehoverte Objekt
 var objectLabel = null
 
@@ -14,9 +15,10 @@ func _ready() -> void:
 
 func _process(delta: float) -> void:
 	# Movement
-	var direction := Vector3.ZERO
-	direction.z -= 1
-	translate(direction * mov_speed * delta)
+	if moving:
+		var direction := Vector3.ZERO
+		direction.z -= 1
+		translate(direction * mov_speed * delta)
 	
 	if current_hovered != null:
 		objectLabel.text = current_hovered.display_name

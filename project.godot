@@ -13,7 +13,6 @@ config_version=5
 config/name="Arceus Century"
 run/main_scene="res://scene.tscn"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
 
 [display]
 
@@ -22,6 +21,10 @@ window/size/viewport_height=360
 window/size/window_width_override=1280
 window/size/window_height_override=720
 window/stretch/mode="viewport"
+
+[global_group]
+
+ui_labels=""
 
 [input]
 
