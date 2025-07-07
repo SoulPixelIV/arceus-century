@@ -5,7 +5,7 @@ extends Node3D
 var spawn_timer_save = spawn_timer
 var enemy_spawn_timer_save = enemy_spawn_timer
 var firstSpawn = false
-var tunnel := preload("res://Scenes/tunnel.tscn")
+var tunnel := preload("res://Scenes/tube_test.tscn")
 var camera := preload("res://Scenes/camera_3d.tscn")
 var card := preload("res://Scenes/card_ui.tscn")
 var enemy := preload("res://Scenes/enemy1.tscn")
@@ -41,10 +41,10 @@ func _process(delta: float) -> void:
 			if firstSpawn:
 				spawn_tunnel_segment(spawned_camera.global_transform.origin + forward_dir * 15)
 			else:
-				var tunnelIndex = 1
+				var tunnelIndex = 3;
 				for i in range(15):
 					spawn_tunnel_segment(spawned_camera.global_transform.origin + forward_dir * tunnelIndex)
-					tunnelIndex += 1
+					tunnelIndex += 6
 				firstSpawn = true
 			spawn_timer = spawn_timer_save
 				

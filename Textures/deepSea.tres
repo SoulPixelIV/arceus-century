@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://dxslssv78sl67"]
+
+[ext_resource type="Texture2D" uid="uid://stifv43inhjs" path="res://Textures/deep sea first final.png" id="1_oh6gs"]
+
+[resource]
+albedo_texture = ExtResource("1_oh6gs")
+uv1_scale = Vector3(0.5, 0.5, 0.16)
+uv1_offset = Vector3(0.5, 0.5, 0)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 1.03526
