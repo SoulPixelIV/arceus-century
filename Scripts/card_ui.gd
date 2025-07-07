@@ -10,6 +10,7 @@ var deck_index = 0
 var maxNumberOfCards = 5
 var cardSlots = [0, 0, 0, 0, 0]
 var currCardNum = 0
+var currCardsInHand = 0
 var card_is_selected = false
 
 @onready var card_container = $CardContainer
@@ -29,7 +30,7 @@ func _process(delta: float) -> void:
 	#Update Deck Counter
 	deckLabel.text = str(deck_size - deck_index)
 	
-	print(cardSlots)
+	print(currCardsInHand)
 	
 	#Timer Bar
 	if timer_bar.value < 100:
@@ -55,6 +56,7 @@ func initiateCard() -> void:
 		spawnedCard.card_id = deck[deck_index]
 		spawnedCard.texture_normal = load_texture_from_folder("res://Textures/Cards/", deck[deck_index])
 		deck_index += 1
+		currCardsInHand += 1
 		card_container.add_child(spawnedCard)
 		
 func load_texture_from_folder(path: String, index: int) -> Texture2D:
@@ -65,3 +67,9 @@ func load_texture_from_folder(path: String, index: int) -> Texture2D:
 func _on_draw_card_button_pressed() -> void:
 	if timer_bar.value == 100.0: 
 		initiateCard()
+
+func _on_discard_pile_button_button_down() -> void:
+	if deck_size - deck_index == 0 and currCardsInHand == 0:
+		cardSlots = [0, 0, 0, 0, 0]
+		deck_index = 0
+		

@@ -43,6 +43,7 @@ func _gui_input(event):
 			queue_free()  # Karte löschen
 			card_ui_parent.cardSlots[handPos] = 0
 			card_ui_parent.currCardNum -= 1
+			card_ui_parent.currCardsInHand -= 1
 			print("Card was discarded.")
 		
 func card_has_focus() -> void:
