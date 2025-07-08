@@ -30,10 +30,11 @@ uv1_triplanar_sharpness = 0.00808803
 [node name="TubeTest" type="Node3D"]
 
 [node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+use_collision = true
 
 [node name="outerCylinder" type="CSGCylinder3D" parent="CSGCombiner3D"]
 transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0)
-radius = 1.5
+radius = 1.0
 height = 6.0
 material = SubResource("StandardMaterial3D_iq2yj")
 

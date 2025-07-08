@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cq1wj3e7bmt3m"]
+
+[node name="BattleArea1" type="Node3D"]
+
+[node name="CSGCombiner3D" type="CSGCombiner3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+use_collision = true
+
+[node name="base" type="CSGCylinder3D" parent="CSGCombiner3D"]
+radius = 2.0
+height = 0.1
+
+[node name="outerPillar" type="CSGPolygon3D" parent="CSGCombiner3D"]
+transform = Transform3D(-0.585506, 0, 0.046194, 0, 1, 0, -1.41354, 0, -0.0191342, 2, 0, 0)
+flip_faces = true
+polygon = PackedVector2Array(0, 0, 0, 1, 1.03008, 1.00732, 1, 0)
