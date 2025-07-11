@@ -21,7 +21,10 @@ func _process(delta: float) -> void:
 		translate(direction * mov_speed * delta)
 	
 	if current_hovered != null:
-		objectLabel.text = current_hovered.display_name
+		if "display_name" in current_hovered:
+			objectLabel.text = current_hovered.display_name
+		else:
+			objectLabel.text = ""
 	
 	# Cursor Raycast
 	var mouse_pos = get_viewport().get_mouse_position()
