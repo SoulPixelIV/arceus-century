@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cq1wj3e7bmt3m"]
+[gd_scene load_steps=2 format=3 uid="uid://cq1wj3e7bmt3m"]
+
+[ext_resource type="PackedScene" uid="uid://bk0prf7bkuqs1" path="res://Assets/Blender/Facilities/FacilityfTst2.glb" id="1_22j1m"]
 
 [node name="BattleArea1" type="Node3D"]
 
@@ -6,11 +8,5 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 use_collision = true
 
-[node name="base" type="CSGCylinder3D" parent="CSGCombiner3D"]
-radius = 2.0
-height = 0.1
-
-[node name="outerPillar" type="CSGPolygon3D" parent="CSGCombiner3D"]
-transform = Transform3D(-0.585506, 0, 0.046194, 0, 1, 0, -1.41354, 0, -0.0191342, 2, 0, 0)
-flip_faces = true
-polygon = PackedVector2Array(0, 0, 0, 1, 1.03008, 1.00732, 1, 0)
+[node name="FacilityfTst2" parent="CSGCombiner3D" instance=ExtResource("1_22j1m")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
