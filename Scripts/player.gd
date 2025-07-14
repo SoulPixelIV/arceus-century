@@ -1,7 +1,12 @@
 extends Node3D
 
 var health = 30
+var strength_buff = 0
 var money = 0
+
+var element_water = false
+
+var keylock = 0
 
 var labels = []
 var health_label = null
