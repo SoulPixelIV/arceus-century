@@ -98,7 +98,6 @@ func _process(delta: float) -> void:
 		if idle_delay < 0:
 			#Randomly select next State
 			var rand_num = int(randf_range(1, 4))
-			print(rand_num)
 			match rand_num:
 				1:
 					state = States.IDLE

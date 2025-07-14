@@ -37,6 +37,7 @@ func _on_button_down() -> void:
 		player_node.is_wet = card_ui_node.card_instance_selected.is_wet
 		player_node.is_burning = card_ui_node.card_instance_selected.is_burning
 		player_node.is_confused = card_ui_node.card_instance_selected.is_confused
+		player_node.burn_duration += card_ui_node.card_instance_selected.burn_duration
 		player_node.keylock += card_ui_node.card_instance_selected.keylock
 		
 		card_ui_node.card_instance_selected.card_was_used()
