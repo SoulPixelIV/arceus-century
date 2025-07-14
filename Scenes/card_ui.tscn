@@ -1,9 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://l1m76cq5pm87"]
+[gd_scene load_steps=8 format=3 uid="uid://l1m76cq5pm87"]
 
 [ext_resource type="Script" uid="uid://bd268hyv1mxjr" path="res://Scripts/card_ui.gd" id="1_lgc0u"]
 [ext_resource type="Texture2D" uid="uid://bvutlugyu6gvd" path="res://Textures/portrait2_small.png" id="2_y8epe"]
 [ext_resource type="Script" uid="uid://b6rq5ygy8m4aa" path="res://player_portrait.gd" id="3_2ndah"]
 [ext_resource type="Texture2D" uid="uid://dk50kaso6ev24" path="res://Textures/flame_icon.png" id="4_7w5n5"]
+[ext_resource type="Texture2D" uid="uid://br5mkx5nfn0uq" path="res://Textures/water_icon.png" id="5_vxiou"]
+[ext_resource type="Texture2D" uid="uid://m61p3xqvifmi" path="res://Textures/conf_icon.png" id="6_ba8y5"]
 
 [sub_resource type="GDScript" id="GDScript_y8epe"]
 script/source = "extends Button
@@ -173,6 +175,14 @@ script = ExtResource("3_2ndah")
 [node name="FlameIcon" type="Sprite2D" parent="." groups=["ui_labels"]]
 position = Vector2(418, 269)
 texture = ExtResource("4_7w5n5")
+
+[node name="WaterIcon" type="Sprite2D" parent="." groups=["ui_labels"]]
+position = Vector2(435, 269)
+texture = ExtResource("5_vxiou")
+
+[node name="ConfusionIcon" type="Sprite2D" parent="." groups=["ui_labels"]]
+position = Vector2(451, 270)
+texture = ExtResource("6_ba8y5")
 
 [connection signal="pressed" from="DrawCardButton" to="." method="_on_draw_card_button_pressed"]
 [connection signal="button_down" from="DiscardPileButton" to="." method="_on_discard_pile_button_button_down"]
