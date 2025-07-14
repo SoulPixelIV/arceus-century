@@ -13,6 +13,7 @@ var cardSlots = [0, 0, 0, 0, 0]
 var currCardNum = 0
 var currCardsInHand = 0
 var card_is_selected = false
+var card_instance_selected = null
 
 @onready var card_container = $CardContainer
 @onready var timer_bar = $TimerBar

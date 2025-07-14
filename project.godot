@@ -26,6 +26,7 @@ window/stretch/mode="viewport"
 
 ui_labels=""
 player=""
+cardUI=""
 
 [input]
 
