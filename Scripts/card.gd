@@ -13,11 +13,13 @@ var damage = 0
 var health_regain = 0
 var strength_buff = 0
 
-var element_water = false
+var is_wet = false
+var is_burning = false
+var is_confused = false
+
+var burn_duration = 0
 
 var keylock = 0
-
-var enemy_confusion_debuff = false
 
 func _ready() -> void:
 	#Set Card Values
@@ -25,11 +27,11 @@ func _ready() -> void:
 		0:
 			strength_buff = 2
 		1:
-			element_water = true
+			is_wet = true
 		2:
 			keylock = 1
 		3:
-			enemy_confusion_debuff = true
+			is_confused = true
 		4:
 			health_regain = 3
 		5:
@@ -41,7 +43,8 @@ func _ready() -> void:
 		8:
 			health_regain = 2
 		9:
-			damage = 2
+			is_burning = true
+			burn_duration = 8
 		10:
 			damage = 2
 		11:
@@ -51,7 +54,8 @@ func _ready() -> void:
 		13:
 			damage = 3
 		14:
-			damage = 1
+			is_burning = true
+			burn_duration = 3
 	
 	pivot_offset = size / 2 #Set Pivot Point
 

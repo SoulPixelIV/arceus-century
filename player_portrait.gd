@@ -34,7 +34,9 @@ func _on_button_down() -> void:
 		player_node.health -= card_ui_node.card_instance_selected.damage
 		player_node.health += card_ui_node.card_instance_selected.health_regain
 		player_node.strength_buff += card_ui_node.card_instance_selected.strength_buff
-		player_node.element_water = card_ui_node.card_instance_selected.element_water
+		player_node.is_wet = card_ui_node.card_instance_selected.is_wet
+		player_node.is_burning = card_ui_node.card_instance_selected.is_burning
+		player_node.is_confused = card_ui_node.card_instance_selected.is_confused
 		player_node.keylock += card_ui_node.card_instance_selected.keylock
 		
 		card_ui_node.card_instance_selected.card_was_used()
