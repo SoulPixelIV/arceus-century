@@ -43,6 +43,10 @@ var shield_sprite: Sprite3D
 
 var flame_texture: Texture2D = preload("res://Textures/flame_icon.png")
 var flame_sprite: Sprite3D
+var water_texture: Texture2D = preload("res://Textures/water_icon.png")
+var water_sprite: Sprite3D
+var conf_texture: Texture2D = preload("res://Textures/conf_icon.png")
+var conf_sprite: Sprite3D
 
 func _ready() -> void:
 	labels = get_tree().get_nodes_in_group("ui_labels")
@@ -81,6 +85,20 @@ func _ready() -> void:
 	flame_sprite.position = Vector3(0.4, 0, 0.1)
 	flame_sprite.visible = false
 	add_child(flame_sprite)
+	
+	#Create Water Icon
+	water_sprite = Sprite3D.new()
+	water_sprite.texture = water_texture
+	water_sprite.position = Vector3(0.5, 0, 0.1)
+	water_sprite.visible = false
+	add_child(water_sprite)
+	
+	#Create Confusion Icon
+	conf_sprite = Sprite3D.new()
+	conf_sprite.texture = conf_texture
+	conf_sprite.position = Vector3(0.6, 0, 0.1)
+	conf_sprite.visible = false
+	add_child(conf_sprite)
 	
 func _process(delta: float) -> void:
 	enemy_health_text.text = "En. Health:"
@@ -145,6 +163,18 @@ func _process(delta: float) -> void:
 			is_burning = false
 	else:
 		flame_sprite.visible = false
+		
+	#Wet	
+	if is_wet:
+		water_sprite.visible = true
+	else:
+		water_sprite.visible = false
+		
+	#Confused
+	if is_confused:
+		conf_sprite.visible = true
+	else:
+		conf_sprite.visible = false
 
 func on_hover():
 	scale = Vector3(1.2, 1.2, 1.2)
@@ -165,9 +195,12 @@ func on_interact():
 			health -= card_ui_node.card_instance_selected.damage
 		health += card_ui_node.card_instance_selected.health_regain
 		strength_buff += card_ui_node.card_instance_selected.strength_buff
-		is_wet = card_ui_node.card_instance_selected.is_wet
-		is_burning = card_ui_node.card_instance_selected.is_burning
-		is_confused = card_ui_node.card_instance_selected.is_confused
+		if card_ui_node.card_instance_selected.is_wet:
+			is_wet = card_ui_node.card_instance_selected.is_wet
+		if card_ui_node.card_instance_selected.is_burning:
+			is_burning = card_ui_node.card_instance_selected.is_burning
+		if card_ui_node.card_instance_selected.is_confused:
+			is_confused = card_ui_node.card_instance_selected.is_confused			
 		burn_duration += card_ui_node.card_instance_selected.burn_duration
 		keylock += card_ui_node.card_instance_selected.keylock
 		

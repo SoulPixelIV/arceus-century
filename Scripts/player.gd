@@ -17,6 +17,8 @@ var labels = []
 var health_label = null
 var money_label = null
 var flame_icon = null
+var water_icon = null
+var conf_icon = null
 
 func _ready() -> void:
 	labels = get_tree().get_nodes_in_group("ui_labels")
@@ -27,6 +29,10 @@ func _ready() -> void:
 			money_label = label
 		if label.name == "FlameIcon":
 			flame_icon = label
+		if label.name == "WaterIcon":
+			water_icon = label
+		if label.name == "ConfusionIcon":
+			conf_icon = label
 	
 func _process(delta: float) -> void:
 	health_label.text = str(health)
@@ -47,6 +53,18 @@ func _process(delta: float) -> void:
 			is_burning = false
 	else:
 		flame_icon.visible = false
+	
+	#Wet	
+	if is_wet:
+		water_icon.visible = true
+	else:
+		water_icon.visible = false
+		
+	#Confused
+	if is_confused:
+		conf_icon.visible = true
+	else:
+		conf_icon.visible = false
 	
 	#Restart Scene on Death
 	if health <= 0:
